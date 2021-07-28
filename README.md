@@ -1,3 +1,27 @@
-# twotruss_analysis
+# 2-D TRUSS FEA
 Matlab code of Finite element anlysis for 2-D truss.
-# data set structure
+# INPUT FILE FORMAT
+INPUT FILE SHOULD BE IN FORMAT OF xlsx WITH TWO SHEET-1,SHEET-2
+___________________________
+SHEET-1 SHOULD CONTAIN DATA ABOUT NODES
+FORMAT OF SHEET-1-
+______________________
+NM  X  Y  Fx  Fy  Mx  My
+NM-->Node Number
+X-->X COORDINATE OF NODE
+Y-->Y COORDINATE OF NODE
+X-->X COMPONENT OF FORCE ACTING ON NODE
+Y-->Y COMPONENT OF FORCE ACTING ON NODE
+Mx = 1 IF NODE CAN MOVE IN X DIRECTION OR Mx=0
+My = 1 IF NODE CAN MOVE IN Y DIRECTION OR My=0
+_________________________________
+SHEET-2 SHOULD CONTAIN DATA ABOUT ELEMENTS
+____________________
+FORMAT OF SHEET-2-
+______________________
+NODE_i  NODE_j  E  A
+Node_i-->ONE OF BOUNDARY NODE OF ELEMENT
+NODE_j-->OTHER BOUNDARY NODE OF ELEMENT
+E-->YOUNGS MODULUS OF ELEMENT
+A-->AREA OF CROSS SECTION OF ELEMENT
+_________________________________
